@@ -7,32 +7,12 @@ spec:
   releaseName: notsentinal
   chart:
     spec:
-      chart: airflow
+      chart: podinfo
       sourceRef:
         kind: HelmRepository
-        name: bitnami
+        name: podinfo
   interval: 10m
   install:
     remediation:
       retries: 3
   values: {}
----
-apiVersion: helm.toolkit.fluxcd.io/v2beta1
-kind: HelmRelease
-metadata:
-  name: rook-ceph
-spec:
-  releaseName: rook-ceph
-  chart:
-    spec:
-      chart: rook-ceph
-      sourceRef:
-        kind: HelmRepository
-        name: rook-release
-  interval: 10m
-  install:
-    remediation:
-      retries: 3
-  values:
-    logLevel: DEBUG
-

@@ -2,15 +2,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1beta1
 kind: HelmRepository
 metadata:
-  name: bitnami
+  name: podinfo
 spec:
-  url: https://charts.bitnami.com/bitnami
-  interval: 10m
----
-apiVersion: source.toolkit.fluxcd.io/v1beta1
-kind: HelmRepository
-metadata:
-  name: rook-release
-spec:
-  url: https://charts.rook.io/release
+  url: https://stefanprodan.github.io/podinfo
   interval: 10m

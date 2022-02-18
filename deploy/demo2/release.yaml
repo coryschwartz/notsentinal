@@ -17,6 +17,6 @@ metadata:
 spec:
   kubeConfig:
     secretRef:
-      name: demo2-stage-kubeconfig
+      name: demo2-kubeconfig
   targetNamespace: default
   storageNamespace: default

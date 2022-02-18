@@ -7,7 +7,7 @@ spec:
   releaseName: notsentinal
   chart:
     spec:
-      chart: wordpress
+      chart: airflow
       sourceRef:
         kind: HelmRepository
         name: bitnami

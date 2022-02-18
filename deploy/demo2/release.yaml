@@ -1,0 +1,10 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: notsentinal
+spec:
+  kubeConfig:
+    secretRef:
+      name: demo2-kubeconfig
+  targetNamespace: default
+  storageNamespace: default
